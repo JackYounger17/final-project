@@ -1,0 +1,148 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f3dc;
+}
+
+.top {
+    width: 100%;
+    min-height: 30vh;
+    padding: 20px;
+    margin-bottom: 10vh;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    background-image: url(../images/aboutus.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1;
+}
+
+.top h1 {
+    position: relative;
+    z-index: 2;
+    color: #525B76;
+}
+
+.principles {
+    width: 100%;
+    min-height: 30vh;
+    padding: 20px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    background-color: white;
+}
+
+.navbar {
+    border-bottom: 5px solid #ddd;
+    background-color: #525B76;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+
+.logo {
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+}
+
+.logo-text {
+    color: white;
+    font-weight: bold;
+}
+
+.dropdown-menu {
+    transition: all 0.3s ease-in-out;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img-top {
+    height: 300px;
+    width: 100%;
+    object-position: center;
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 18px;
+}
+
+.account-button, .card-button, #add-to-cart {
+    background-color: #18c7a4;
+    color: black !important;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 24px;
+    transition: 0.3s ease;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.account-button:hover, .card-button:hover, #add-to-cart:hover {
+    background-color: #17d4ae;
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+.nav-button img {
+    width: 50px;
+    height: 50px;
+}
+
+.nav-button {
+    border: none;
+}
+
+.nav-button:hover {
+    opacity: 0.9;
+}
+
+@media (max-width: 1200px) {
+    .product-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+}
